@@ -45,7 +45,15 @@ git checkout -- file命令中的--很重要，没有--，就变成了
 git reset HEAD <file>可以把暂存区的修改撤销掉（unstage），重新放回工作区：
 
 
-
-
-
+本地库和github远程库
+1、本地库与远程库关联
+git remote orgin git@github.com:username/your repository
+2、配置用户名和邮箱
+git config --global user.name="xxx"
+git config --global user.email ="xxx"
+3、设置SSH KEY
+（1）在git bash 中执行ssh-keygen -t -rsa -C "your email"，一路回车
+（2）根据命令行信息找到id_rsa.pub所在位置，并将其配置在github的SSHkeys中
+4、将本地库同步到远程库、
+git push -u origin master
 
