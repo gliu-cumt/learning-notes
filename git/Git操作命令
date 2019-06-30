@@ -57,3 +57,21 @@ git config --global user.email ="xxx"
 4、将本地库同步到远程库、
 git push -u origin master
 
+
+远程库clone
+git clone git@github.com:username/your repository
+git clone git@github.com:gliu-cumt/learning-notes.git
+
+https://github.com/gliu-cumt/learning-notes.git
+
+
+
+分支管理
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+git log --graph
