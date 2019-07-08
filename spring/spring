@@ -41,8 +41,22 @@ invokeInitMethods自定义初始化方法
 
 七、自动装配
 含义解释：spring利用依赖注入（DI），完成对IOC容器的各组件依赖关系赋值
-@Autowired
+
+1、@Autowired
 1）默认优先按照类型去容器中找组件
 2）如果找到多个组件，属性名作为Id去组件中查找
 3）使用Qualifier指定需要装配的属性ID
 4)自动装配组件容器中没有就会报错
+5）指定首选装配bean-----@Promary
+
+标注位置：
+方法:从IOC中获取
+构造器：从IOC获取，如果只有一个有参构造器，@Autowired可以省略
+@Bean标注方式
+
+
+2、@Resourc(name="xxxx")
+3、@Inject
+4自定义组件想要使用Spring容器组件实现xxxAware,在对象创建时会调用接口规定的方法注入相关组件
+Aware:xxxAwre:功能使用xxxProcessor
+
