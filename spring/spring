@@ -60,3 +60,10 @@ invokeInitMethods自定义初始化方法
 4自定义组件想要使用Spring容器组件实现xxxAware,在对象创建时会调用接口规定的方法注入相关组件
 Aware:xxxAwre:功能使用xxxProcessor
 
+
+@Profile指定组件在哪种环境中执行
+
+
+
+@AOP【动态代理】
+
