@@ -65,5 +65,25 @@ Aware:xxxAwre:功能使用xxxProcessor
 
 
 
-@AOP【动态代理】
+八、AOP【动态代理】
+1、使用方式
+1)、导入AOP模块
+2）、定义业务逻辑类
+3)、定义切面类
+	通知方法：
+		前置通知
+		后置通知
+		
+		环绕通知
+		返回通知
+		异常返通知
+4)@Aspect	告诉Spring当前类是切面类
+5)增加配置类的@EnableAspectJAutoProxy注解【开启基于注解的aop模式】
+6)在切面类中传入Joinpoint对象，获取方法信息。异常、返回等信息
 
+
+@EnableAspectJAutoProxy原理
+	@Import(AspectJAutoProxyRegistrar.class)
+	利用AspectJAutoProxyRegistrar给容器中注入bean
+	
+	28-31没看
